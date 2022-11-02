@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:0%;
+    margin:0%;
+font-family: Arial, Helvetica, sans-serif;
+background-color: black;
+overflow-x: hidden;
+}
+
+
+
+.mainbar{
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.mainbar ul{
+    display: flex;
+    margin-left: 37%;
+}
+
+.mainbar ul li{
+    list-style-type: none;
+    margin-left: 17px;
+
+}
+
+.mainbar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.check_btn{
+    font-size: 30px;
+    color:blue;
+}
+
+
+
+
+
+
+
+
+
+.banner{
+    background-image: url('netflix-images/stranger.jpg');
+    background-size: cover;
+    background-position: center center;
+    color:white;
+    object-fit: contain;
+    height: 500px;
+}
+
+.banner_contents{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 240px;
+    height:190px;
+}
+
+.banner_title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
+
+.description{
+    width:45rem;
+    line-height:1.7;
+    padding-top: 1rem;
+    
+    font-size: 0.8rem;
+    max-width:370px;
+    height:200px;
+}
+
+.banner_button{
+    cursor: pointer;
+    color:white;
+    outline:none;
+    border:none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 0,5rem;
+    padding-top: 0.3rem;
+    background-color: rgba(44, 33, 33, 0.542);
+}
+
+.banner_button:hover{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.738);
+}
+
+
+
+.banner_fadeBottom{
+    margin-top: -115px;
+    height:7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.62),#111);
+}
+
+
+.nav_logo{
+    margin-left: 7px;
+    width:120px;
+    object-fit: contain;
+}
+
+
+.nav_avatar{
+    width:30px;
+    object-fit: contain;
+}
+
+.nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+
+}
+
+
+.nav__grey{
+    background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+/* row and row_posters section starts from here */
+
+
+
+
+.row{
+    color:rgb(249, 234, 234);
+    margin-left:30px;
+    margin-top: 27px;
+}
+
+.title{
+    margin-left: 10px;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight:bolder;
+      bottom: -11px;
+}
+
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding:12px;
+    margin-left: -5px;
+}
+
+
+
+
+
+.row_poster{
+    width:280px;
+    object-fit: contain;
+    margin-left: 15px;
+    margin-right: -4px;
+    padding:2px;
+    transition: 450ms;
+}
+
+
+
+
+.row_poster:hover{
+  
+    transform: scale(1.06);
+    box-shadow: 0.09px 0.09px 3px red;
+    opacity:1;
+    
+}
+
+
+
+
+
+
+.row_posterLarge{
+max-height: 250px;
+padding:7px;
+transition:250ms;
+margin-left: 14px;
+margin-right: -16px;
+ 
+}
+
+.row_posterLarge:hover{
+    object-fit: contain;
+    transform: scale(1.05);
+    box-shadow: 0.33px 0.33px 5px rgba(253, 251, 251, 0.982);
+    opacity:1;
+     
+}
+
+
+#sch{
+    z-index: 1;
+    font-size: larger;
+}
+
+
+
+
+
+
+/* bootstrap codes */
+
+
+#navbar-example2{
+    float: right;
+    margin-right: 8%;
+}
+
+
+
+#genre{
+    margin-left: -30px;
+    color:rgba(255, 255, 255, 0.683);
+}
+
+
+#genre:hover{
+    color: white;
+}
+
+.dropdown-menu.show {
+    margin-left: -55px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.684);
+    --bs-dropdown-link-hover-bg:rgba(0, 0, 0, 0.757);
+}
+
+.dropdown-menu.show li a{
+    color:grey;
+}
+
+
+.dropdown-menu.show li a:hover{
+    color: white;;
+}
+
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -33px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+    body{
+        padding-right: 0%;
+        margin-right:0%;
+        overflow-x: hidden;
+    }
+
+
+
+
+    #genre{
+        margin-left:-93px;
+    }
+
+    .dropdown-menu.show{
+        margin-left: -115px;
+    }
+}
+
+
+

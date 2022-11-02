@@ -1,0 +1,117 @@
+
+
+
+
+.sidebar li {
+list-style-type: none;
+
+}
+
+.sidebar .firstul li a{
+    text-decoration: none;
+    color:rgba(255, 250, 250, 0.417);
+    line-height: 65px;
+    display: block;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: 450ms;
+
+}
+
+
+.sidebar .firstul li:hover a{
+    color:white;
+   transition-duration: 0.5s;
+   transform:translate(8px,0px)
+}
+
+
+
+
+
+
+
+
+
+.sidebar{
+    margin-top: 50px;
+    position: fixed;
+    left:-250px;
+    width:250px;
+    height:100%;
+    background: rgba(0, 0, 0, 0.969);
+    transition: all .6s ease;
+    overflow-y: scroll;
+}
+
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background:none;
+    border-radius: 3px;
+
+}
+
+label #btn{
+    left:142px;
+    top:14px;
+    font-size: 35px;
+    color:rgba(255, 255, 255, 0.468);
+    padding:6px 12px;
+    transition: all .5s;
+}
+
+
+
+label #cancel{
+    z-index:1111;
+    left:-195px;
+    top:17px;
+    font-size:30px;
+    color:#0a5275;
+    padding:4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left:0;
+
+}
+
+#check:checked ~ label #btn{
+    left:250px;
+    opacity:0;
+    pointer-events:none;
+}
+
+#check:checked ~ label #cancel{
+    left:195px;
+}
+
+.setandlog{
+    opacity: 0.6;
+}
+
+.setandlog .secondul li  a{
+    color:white;
+    transition:200ms;
+}
+
+.setandlog .secondul li:hover a{
+    transform: scale(1.04);
+}
+
+
+
+
