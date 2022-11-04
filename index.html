@@ -112,7 +112,7 @@
         <h2 class="title">Netflix Originals</h2>
         <div class="row_posters">
           <a class="play" onclick="toggleVideo()";><img src="netflix-images/large-movie15.jpg" alt="" class="row_posterLarge"> </a>
-            <img src="netflix-images/large-movie14.jpg" alt="" class="row_posterLarge">
+          <a class="play"  onclick="toggleVideo2()";><img src="netflix-images/large-movie14.jpg" alt="" class="row_posterLarge"></a>
             <img src="netflix-images/large-movie13.jpg" alt="" class="row_posterLarge">
             <img src="netflix-images/large-movie12.jpg" alt="" class="row_posterLarge">
             <img src="netflix-images/large-movie9.jpg" alt="" class="row_posterLarge">
@@ -347,6 +347,12 @@
    </div>
 
 
+   <div class="trailer2">
+    <video src="./netflix-images/movie.mp4" controls="true" autoplay="true"></video>
+    <img src="./netflix-images/close.png" class="close" onclick="toggleVideo2();" >
+   </div>
+
+
    
 
 
@@ -361,9 +367,17 @@
             }
         });
 
+
+        // video play management section using JS
         function toggleVideo(){
             const trailer = document.querySelector('.trailer');
             trailer.classList.toggle('active')
+        }
+
+
+        function toggleVideo2(){
+            const trailer2 = document.querySelector('.trailer2');
+            trailer2.classList.toggle('active')
         }
 
 
