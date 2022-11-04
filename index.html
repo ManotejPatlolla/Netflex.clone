@@ -111,7 +111,7 @@
     <div class="row">
         <h2 class="title">Netflix Originals</h2>
         <div class="row_posters">
-            <img src="netflix-images/large-movie15.jpg" alt="" class="row_posterLarge">
+          <a class="play" onclick="toggleVideo()";><img src="netflix-images/large-movie15.jpg" alt="" class="row_posterLarge"> </a>
             <img src="netflix-images/large-movie14.jpg" alt="" class="row_posterLarge">
             <img src="netflix-images/large-movie13.jpg" alt="" class="row_posterLarge">
             <img src="netflix-images/large-movie12.jpg" alt="" class="row_posterLarge">
@@ -340,7 +340,12 @@
 
 
     
-  
+       
+   <div class="trailer">
+    <video src="./netflix-images/movie.mp4" controls="true" autoplay="true"></video>
+    <img src="./netflix-images/close.png" class="close" onclick="toggleVideo();" >
+   </div>
+
 
    
 
@@ -355,6 +360,13 @@
                 nav.classList.remove('nav__grey');
             }
         });
+
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active')
+        }
+
+
     </script>
 
 
@@ -372,6 +384,8 @@
       </li>
     </ul>
   </nav>
+
+
 
      <br><br><br>
 
